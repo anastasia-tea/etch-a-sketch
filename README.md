@@ -14,3 +14,5 @@ References:
 -https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 -https://www.w3schools.com/css/css3_borders.asp
 -https://www.w3schools.com/howto/howto_js_rangeslider.asp
+-https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
+-https://www.w3schools.com/cssref/tryit.php?filename=trycss_js_grid-template-columns
