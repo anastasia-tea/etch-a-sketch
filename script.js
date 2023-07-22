@@ -6,9 +6,9 @@ const clear = document.querySelector("#clear");
 const slider = document.querySelector(".slider");
 const number = document.querySelector(".number");
 
-const classic = document.querySelector(".classic");
-const grey = document.querySelector(".grey");
-const rainbow = document.querySelector(".rainbow");
+const classic = document.querySelector("#classic");
+const grey = document.querySelector("#grey");
+const rainbow = document.querySelector("#rainbow");
 
 function start() {
 
@@ -62,7 +62,7 @@ slider.addEventListener("click", function () {
         
         div.addEventListener("mouseover", function (e) {
             e.target.style.backgroundColor = "black";
-        })
+        });
 
         screen.appendChild(div);
     }
@@ -72,16 +72,54 @@ slider.addEventListener("click", function () {
 //button to return to black pixel color
 classic.addEventListener("click", function () {
 
+    let size = document.querySelector(".slider").value;
+    let area = size * size;
+
+    let pixels = screen.children;
+
+    for (let i = 0; i < area; i++) {
+        pixels[i].addEventListener("mouseover", function (e) {
+            e.target.style.backgroundColor = "black";
+        });
+    }
+
 });
 
 //button to make pixel color grey that becomes ten percent more black
 //each time pixel is highlighted
 grey.addEventListener("click", function () {
 
+    let size = document.querySelector(".slider").value;
+    let area = size * size;
+
+    let pixels = screen.children;
+
+    for (let i = 0; i < area; i++) {
+        pixels[i].addEventListener("mouseover", function (e) {
+            e.target.style.backgroundColor = "black";
+        });
+    }
+
 });
 
 //button that makes each highlighted pixel a random color
 rainbow.addEventListener("click", function () {
+
+    let size = document.querySelector(".slider").value;
+    let area = size * size;
+
+    let pixels = screen.children;
+
+    for (let i = 0; i < area; i++) {
+
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+
+        pixels[i].addEventListener("mouseover", function (e) {
+            e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        });
+    }
 
 });
 
