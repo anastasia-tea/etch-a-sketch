@@ -19,3 +19,4 @@ References:
 -https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
 -https://www.w3schools.com/cssref/tryit.php?filename=trycss_js_grid-template-columns
 -https://www.w3schools.com/js/js_random.asp
+-https://convertingcolors.com/rgb-color-0_0_0.html#google_vignette

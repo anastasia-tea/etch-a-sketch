@@ -96,7 +96,9 @@ grey.addEventListener("click", function () {
 
     for (let i = 0; i < area; i++) {
         pixels[i].addEventListener("mouseover", function (e) {
-            e.target.style.backgroundColor = "black";
+
+            e.target.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+            
         });
     }
 
