@@ -50,12 +50,35 @@ h1 {
 }
 
 .buttons {
-    padding: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+}
+
+.color,
+.erase {
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 #classic,
 #grey,
 #rainbow {
-    background-color: rgb(57, 238, 66);
-    color: black;
+    background-color: rgb(14, 173, 22);
+    color: white;
+    font-weight: bold;
+}
+
+#clear {
+    background-color: rgb(128, 6, 209);
+    color: white;
+    font-weight: bold;
 }
