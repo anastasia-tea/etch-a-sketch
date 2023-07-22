@@ -4,7 +4,6 @@ body {
     background-color: rgb(141, 199, 247);
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .frame {
@@ -13,20 +12,50 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
+    margin: 20px 500px;
+    min-width: 200px;
+    border: 10px solid black;
+    border-radius: 30px;
 }
 
 .header {
     font-style: bold;
     color: white;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 6px;
+    padding: 6px;
 }
 
 .screen {
-    background-color: rgb(173, 171, 171);
+    display: grid;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    border: 20px solid black;
+    border-radius: 30px;
+}
+
+.pixel {
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+.buttons {
+    padding: 10px;
 }
 
 #classic,
 #grey,
 #rainbow {
-    background-color: rgb(206, 73, 166);
-    color: white;
+    background-color: rgb(57, 238, 66);
+    color: black;
 }
