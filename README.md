@@ -13,3 +13,4 @@ References:
 -https://www.js-craft.io/blog/how-display-inline-grid-works-in-css-and-how-is-different-from-display-grid/
 -https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 -https://www.w3schools.com/css/css3_borders.asp
+-https://www.w3schools.com/howto/howto_js_rangeslider.asp
