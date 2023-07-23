@@ -87,7 +87,7 @@ classic.addEventListener("click", function () {
 
 //button to make pixel color grey that becomes ten percent more black
 //each time pixel is highlighted
-grey.addEventListener("click", function () {
+/*grey.addEventListener("click", function () {
 
     let size = document.querySelector(".slider").value;
     let area = size * size;
@@ -97,12 +97,18 @@ grey.addEventListener("click", function () {
     for (let i = 0; i < area; i++) {
         pixels[i].addEventListener("mouseover", function (e) {
 
-            e.target.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+            let background = e.target.style.backgroundColor = "rgba(0,0,0,0.1)";
+            let current = background.split(" ")[3];
+            let num = parseFloat(current);
+
+            if (num <= 0.9) {
+                e.target.style.backgroundColor = `rgba(0,0,0, ${num + 0.1})`;
+            }
             
         });
     }
 
-});
+});*/
 
 //button that makes each highlighted pixel a random color
 rainbow.addEventListener("click", function () {
