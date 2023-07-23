@@ -1,7 +1,7 @@
 
 # etch-a-sketch
 
-This is Odin Project's Etch-a-Sketch project.
+This is Odin Project's Etch-a-Sketch project. This was really fun and probably my favorite project so far!
 
 References:
 -https://stackoverflow.com/questions/20308270/create-multiple-divs-with-the-same-class-javascript
